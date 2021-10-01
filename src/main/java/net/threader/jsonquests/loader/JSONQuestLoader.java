@@ -18,6 +18,6 @@ public class JSONQuestLoader implements FileLoader<Quest> {
         JSONArray steps = (JSONArray) object.get("steps");
         //load each step
 
-        return new Quest(file, object, identifier);
+        return new Quest(file, object, identifier, null);
     }
 }

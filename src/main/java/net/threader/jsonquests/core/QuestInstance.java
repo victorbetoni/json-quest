@@ -10,12 +10,18 @@ public class QuestInstance {
     private Quest original;
     private File file;
     private JSONObject json;
+    private int progress;
 
-    public QuestInstance(UUID actor, Quest original, File file, JSONObject json) {
+    public QuestInstance(UUID actor, Quest original, File file, JSONObject json, int progress) {
         this.actor = actor;
         this.original = original;
         this.file = file;
         this.json = json;
+        this.progress = progress;
+    }
+
+    public int getProgress() {
+        return progress;
     }
 
     public UUID getActor() {
